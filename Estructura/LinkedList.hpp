@@ -3,8 +3,6 @@
 
 #include "TDALista.hpp"
 #include "Nodo.hpp"
-#include <string>;
-using std::string;
 
 class LinkedList :public TDALista {
 	public:

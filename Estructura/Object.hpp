@@ -10,6 +10,7 @@ class Object {
 		void setTipo(std::string);
 		virtual bool equals(Object*);
 		virtual string toString();
+	private:
 		std::string tipo;
 };
 

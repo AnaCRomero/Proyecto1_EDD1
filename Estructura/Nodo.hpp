@@ -18,6 +18,8 @@ class Nodo {
 		Nodo* getAnterior();
 		void setSiguiente(Nodo*);
 		Nodo* getSiguiente();
+
+	private:
 		Object* data;
 		Nodo* siguiente;
 		Nodo* anterior;

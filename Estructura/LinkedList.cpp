@@ -25,18 +25,18 @@ Nodo* LinkedList::moverse(int pos) {
 
 void LinkedList::imprime() {
 	//recorrer desde inicio temp = temp.siguiente
-	if(inicio) {
+	/*if(inicio) {
 		Nodo* temp = inicio;
 		while(temp) {
 			std::cout<<temp->getData()->toString()<<endl;
 			temp = temp->getSiguiente();
 		} // Fin While
-	} // Fin If
+	} // Fin If*/
 	int temporal = nElementos;
 	if(nElementos > 0){
 		Nodo* temp = inicio;
 		while(temporal > 0){
-			std::cout<<temp->getData()->toString() << std::endl;
+			std::cout<<temp->getData()->toString()<<endl;
 			temp = temp->getSiguiente();
 			temporal--;
 		}
@@ -45,6 +45,7 @@ void LinkedList::imprime() {
 
 bool LinkedList::inserta(int pos, Object* data) {
 	if ((pos < 1 || pos > nElementos + 1)) {
+		cout << "false";
 		return false;
 	} else {
 		if (pos == 1 && data != NULL) {

@@ -8,9 +8,9 @@ int main() {
 	Object* tipo =new Object ("hola");
 	Object* tipo1 =new Object ("adios");
 	Object* tipo2 =new Object ("bai");
-	lista->inserta(0,tipo);
-	lista->inserta(1,tipo1);
-	lista->inserta(2,tipo2);
+	lista->inserta(1,tipo);
+	lista->inserta(2,tipo1);
+	lista->inserta(3,tipo2);
 	std::cout << "Agregado exitosamente!" << std::endl;
 
 	//suprime
