@@ -45,26 +45,18 @@ void LinkedList::imprime() {
 
 bool LinkedList::inserta(int pos, Object* data) {
 	if ((pos < 1 || pos > nElementos + 1)) {
-		cout << "false";
 		return false;
 	} else {
 		if (pos == 1 && data != NULL) {
-			cout << "paso ";
 			Nodo *temp = new Nodo();
-			cout << "paso 2 ";
 			temp->setData(data);
-			cout << "paso 3 ";
 			temp->setSiguiente(inicio);
-			cout << "antes del if";
 			if (inicio != NULL) {
 				inicio->setAnterior(temp);
-				cout << "entro ";
 			}else{
 				inicio=temp;
-				cout << "no entro ";
 			}
 			nElementos++;
-			cout << "true";
 			return true;
 		} else {
 			if (pos == nElementos + 1) {

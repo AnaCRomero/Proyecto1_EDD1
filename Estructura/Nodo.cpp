@@ -4,7 +4,7 @@
 Nodo::Nodo() {
 	siguiente = 0;
 	anterior = 0;
-	data=0;
+	data = 0;
 }
 
 Nodo::Nodo(Object* pData) {
